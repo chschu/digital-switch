@@ -2,5 +2,4 @@
 .DS_Store
 
 # KiCad
-*-bak
-*.bck
+/*-backups
