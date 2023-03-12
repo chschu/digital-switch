@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 6070951F
+P 6750 4000
+F 0 "Q2" H 6954 4046 50  0000 L CNN
+F 1 "AO3402" H 6954 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6950 4100 50  0001 C CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AO3402.pdf" H 6750 4000 50  0001 C CNN
+	1    6750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4500 6850 4200
+Wire Wire Line
+	7200 3700 7200 3500
+Wire Wire Line
+	6850 3700 7200 3700
+Connection ~ 6850 3700
+Wire Wire Line
+	6850 3600 6850 3700
+Wire Wire Line
+	6850 3200 7000 3200
+Connection ~ 6850 3200
+Wire Wire Line
+	6850 3200 6850 3300
+$Comp
+L Device:R R1
+U 1 1 60707FDE
+P 6850 3450
+F 0 "R1" H 6920 3496 50  0000 L CNN
+F 1 "10k" H 6920 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6780 3450 50  0001 C CNN
+F 3 "~" H 6850 3450 50  0001 C CNN
+	1    6850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 60702CE0
+P 7200 3300
+F 0 "Q1" V 7542 3300 50  0000 C CNN
+F 1 "AO3401A" V 7451 3300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7400 3400 50  0001 C CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AO3401A.pdf" H 7200 3300 50  0001 C CNN
+	1    7200 3300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6072EAEE
+P 6450 4250
+F 0 "R2" H 6520 4296 50  0000 L CNN
+F 1 "10k" H 6520 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6380 4250 50  0001 C CNN
+F 3 "~" H 6450 4250 50  0001 C CNN
+	1    6450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4000 6450 4100
+Connection ~ 6450 4000
+Wire Wire Line
+	6450 4000 6550 4000
+Wire Wire Line
+	6450 4400 6450 4500
+Wire Wire Line
+	6450 4500 6850 4500
+Wire Wire Line
+	6850 3700 6850 3800
+Wire Wire Line
+	6050 3400 6050 3300
+Connection ~ 6850 4500
+$Comp
+L power:GND #PWR0101
+U 1 1 6073AFEC
+P 6850 4600
+F 0 "#PWR0101" H 6850 4350 50  0001 C CNN
+F 1 "GND" H 6855 4427 50  0000 C CNN
+F 2 "" H 6850 4600 50  0001 C CNN
+F 3 "" H 6850 4600 50  0001 C CNN
+	1    6850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4600 6850 4500
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 6073557C
+P 5750 3300
+F 0 "J1" H 5722 3182 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5722 3273 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5750 3300 50  0001 C CNN
+F 3 "~" H 5750 3300 50  0001 C CNN
+	1    5750 3300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6050 3300 5950 3300
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 607CAE24
+P 8100 3300
+F 0 "J3" H 8072 3182 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8072 3273 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 8100 3300 50  0001 C CNN
+F 3 "~" H 8100 3300 50  0001 C CNN
+	1    8100 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 607CBA87
+P 7800 3400
+F 0 "#PWR0104" H 7800 3150 50  0001 C CNN
+F 1 "GND" H 7805 3227 50  0000 C CNN
+F 2 "" H 7800 3400 50  0001 C CNN
+F 3 "" H 7800 3400 50  0001 C CNN
+	1    7800 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3300 7800 3300
+Wire Wire Line
+	7800 3300 7800 3400
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 607CDC9E
+P 5750 4100
+F 0 "J2" H 5722 3982 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5722 4073 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5750 4100 50  0001 C CNN
+F 3 "~" H 5750 4100 50  0001 C CNN
+	1    5750 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 607CE311
+P 6050 4200
+F 0 "#PWR0106" H 6050 3950 50  0001 C CNN
+F 1 "GND" H 6055 4027 50  0000 C CNN
+F 2 "" H 6050 4200 50  0001 C CNN
+F 3 "" H 6050 4200 50  0001 C CNN
+	1    6050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4100 6050 4100
+Wire Wire Line
+	6050 4100 6050 4200
+Connection ~ 6050 3300
+Wire Wire Line
+	6150 3300 6050 3300
+$Comp
+L power:GND #PWR0103
+U 1 1 60793793
+P 6050 3400
+F 0 "#PWR0103" H 6050 3150 50  0001 C CNN
+F 1 "GND" H 6055 3227 50  0000 C CNN
+F 2 "" H 6050 3400 50  0001 C CNN
+F 3 "" H 6050 3400 50  0001 C CNN
+	1    6050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 607A4560
+P 6150 3300
+F 0 "#FLG0102" H 6150 3375 50  0001 C CNN
+F 1 "PWR_FLAG" V 6150 3428 50  0000 L CNN
+F 2 "" H 6150 3300 50  0001 C CNN
+F 3 "~" H 6150 3300 50  0001 C CNN
+	1    6150 3300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 3200 6850 3200
+Text Label 6050 3200 0    50   ~ 0
+Vin
+Wire Wire Line
+	5950 4000 6450 4000
+Text Label 6050 4000 0    50   ~ 0
+Vctl
+Wire Wire Line
+	7400 3200 7900 3200
+Text Label 7800 3200 2    50   ~ 0
+Vout
+$EndSCHEMATC
